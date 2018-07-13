@@ -1,0 +1,22 @@
+extends ../diseño.pug
+
+block contenido
+  .pb-2.mt-2.mb-4.border-bottom
+    h3 Registro
+  form(id=formulario-registro, method="post")
+    .form-group.row
+      label.col-md-3.col-form-label.font-weight-bold.text-right(for='email') Correo electrónico
+      .col-md-7
+        input.form-control(type='email', name='email', id='email', placeholder='Correo@dominio.com', autofocus, required)
+    .form-group.row
+      label.col-md-3.col-form-label.font-weight-bold.text-right(for='password') Contraseña
+      .col-md-7
+        input.form-control(type='password', name='password', id='password', placeholder='Ingresa tu contraseña', required)
+    .form-group.row
+      label.col-md-3.col-form-label.font-weight-bold.text-right(for='confirmPassword') Confirmar contraseña
+      .col-md-7
+        input.form-control(type='password', name='confirmPassword', id='confirmPassword', placeholder='Vuelve a ingresar tu contraseña', required)
+    .form-group.offset-sm-3.col-md-7.pl-2
+      button.btn.btn-success(type='submit')
+        i.fas.fa-user-plus.fa-sm
+        | Registrarme

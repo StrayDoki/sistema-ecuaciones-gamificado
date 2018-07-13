@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Una pagina web de gamificacion",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postinstall": "npm rebuild node-sass"
   },
   "repository": {
     "type": "git",
@@ -16,9 +16,16 @@
   },
   "homepage": "https://github.com/StrayDoki/sistema-ecuaciones-gamificado#readme",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.1.0",
+    "@ladjs/bootstrap-social": "^7.0.2",
+    "body-parser": "^1.18.3",
+    "bootstrap": "^4.1.1",
     "chalk": "^2.4.1",
     "dotenv": "^6.0.0",
     "express": "^4.16.3",
+    "express-flash": "0.0.2",
+    "express-session": "^1.15.6",
+    "express-validator": "^5.2.0",
     "node-sass": "^4.9.2",
     "node-sass-middleware": "^0.11.0",
     "pug": "^2.0.3"
